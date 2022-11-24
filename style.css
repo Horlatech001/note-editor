@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bg{
+    min-height: 100vh;
+    background-color: #01073b;
+}
+.head{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.head :nth-child(1){
+    color: white;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.head :nth-child(2){
+    color: white;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+}
+.bg-wh{
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.bg-wh label span {
+    font-size: 1.3rem;
+    margin-left: 20px;
+    margin-top: 10px
+}   
+.date{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#title-container,
+#date-container{
+    width: 40%;
+    outline: none;
+}
+#content-container{
+    width: 95%;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    outline: none;
+}
+#save-btn{
+    float: right;
+    margin-right: 45px;
+    margin-top: -30px;
+    position: relative;
+}
+.notes{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.notes-left{
+    height: 150px;
+    background-color: white;
+    width: 29%;
+    padding: 10px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.note-title :nth-child(1),
+.note-title :nth-child(2){
+    font-size: 1.2rem;
+    color: #01073b;
+}
+.note-title :nth-child(2){
+    font-weight: bolder;
+}
+.note-date :nth-child(1),
+.note-date :nth-child(2){
+    font-size: 1.2rem;
+    color: #01073b;
+}
+.note-content{
+    overflow-y: scroll;
+}
+.notes-content::-webkit-scrollbar{
+    display: none;
+}
+.note-content p{
+    margin-top: 10px;
+    color: #01073b;
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+#edit-btn{
+    background-color: #01073b;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    float: right;
+}
+@media (max-width: 768px){
+    .notes-left{
+        width: 40%;
+        margin: auto;
+    }
+}
+@media (max-width: 360px){
+    .notes-left{
+        width: 90%;
+        margin: auto;
+    }
+    #content-container{
+        width: 85%;
+    }
+}
